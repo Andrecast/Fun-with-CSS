@@ -1,0 +1,23 @@
+a {
+    position: relative;
+    color: #9B2A35;
+    text-decoration: none; /* Para que no aparezca la línea debajo de Holberton */
+}
+
+a::before, a:visited { /* before  (Selecciona el elemento al que se puede aplicar estilo que aparece antes del contenido del elemento que lo origina), visited (Selecciona los enlaces visitados) */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9B2A35;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::before { /* Hover (cuando se pone el cursor sobre el elemento) */
+  visibility: visible;
+  transform: scaleX(1);
+}
