@@ -1,0 +1,39 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+  margin: 50px 20px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+.i-html{
+    width: 20vw; /* Porcentaje relativo a la anchura del viewport */
+    height: 60vh; /* Porcentaje relativo a la altura del viewport */
+    display: block;
+    background-image: url(0-sprite.png);
+}
+
+.i-css {
+    width: 20vw;
+    height: 60vh;
+    display: block;
+    background-image: url(0-sprite.png);
+    background-position: center;
+}
+
+.i-js {
+    width: 20vw;
+    height: 60vh;
+    display: block;
+    background-image: url(0-sprite.png);
+    background-position: right;
+}
